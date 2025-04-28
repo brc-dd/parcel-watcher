@@ -17,9 +17,14 @@ try {
 
 export async function subscribe(
   dir: string,
-  fn: (err: Error | null, events: Event[]) => unknown,
+  fn: (
+    err: Error | null,
+    events: { path: string; type: 'create' | 'update' | 'delete' }[]
+  ) => unknown,
   opts: { ignoreGlobs?: string[] }
 ): Promise<{ unsubscribe: () => void }> {
+  //
+
   dir = resolve(dir)
   await binding.subscribe(dir, fn, opts)
 
