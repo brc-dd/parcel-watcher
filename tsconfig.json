@@ -1,7 +1,10 @@
 {
   "compilerOptions": {
+    "declaration": true,
     "esModuleInterop": true,
+    "isolatedDeclarations": true,
     "module": "NodeNext",
-    "moduleResolution": "NodeNext"
+    "moduleResolution": "NodeNext",
+    "verbatimModuleSyntax": true
   }
 }
