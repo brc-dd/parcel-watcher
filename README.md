@@ -18,7 +18,7 @@ npm add @brc-dd/watcher
 import { subscribe } from '@brc-dd/watcher'
 
 // subscribe to events
-const subscription = await watcher.subscribe(
+const subscription = await subscribe(
   process.cwd(),
   (err, events) => {
     console.log(events)
@@ -37,7 +37,7 @@ On Deno:
 ```ts
 import { subscribe } from 'npm:@brc-dd/watcher'
 
-const subscription = await watcher.subscribe(Deno.cwd() /*, ... */)
+const subscription = await subscribe(Deno.cwd() /*, ... */)
 
 addEventListener('unload', subscription.unsubscribe)
 ```
