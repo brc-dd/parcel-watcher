@@ -1,6 +1,6 @@
 import { createRequire } from 'node:module'
 import { resolve } from 'node:path'
-import { platform, arch } from 'node:process'
+import { arch, platform } from 'node:process'
 
 const require = createRequire(import.meta.url)
 
@@ -21,7 +21,7 @@ export async function subscribe(
     err: Error | null,
     events: { path: string; type: 'create' | 'update' | 'delete' }[]
   ) => unknown,
-  opts: { ignoreGlobs?: string[] }
+  opts: { ignoreGlobs?: string[]; ignorePaths?: string[] } = {}
 ): Promise<{ unsubscribe: () => void }> {
   //
 

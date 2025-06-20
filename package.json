@@ -1,10 +1,10 @@
 {
   "name": "@brc-dd/watcher",
   "version": "2.5.1-2",
+  "license": "MIT",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "license": "MIT",
   "files": [
     "dist"
   ],
@@ -13,6 +13,11 @@
       3
     ]
   },
+  "devDependencies": {
+    "@types/node": "^24.0.3",
+    "tsdown": "^0.12.8",
+    "typescript": "^5.8.3"
+  },
   "optionalDependencies": {
     "@parcel/watcher-darwin-arm64": "2.5.1",
     "@parcel/watcher-darwin-x64": "2.5.1",
@@ -20,10 +25,5 @@
     "@parcel/watcher-linux-x64-glibc": "2.5.1",
     "@parcel/watcher-win32-arm64": "2.5.1",
     "@parcel/watcher-win32-x64": "2.5.1"
-  },
-  "devDependencies": {
-    "@types/node": "^22.15.2",
-    "tsdown": "^0.10.0",
-    "typescript": "^5.8.3"
   }
 }
