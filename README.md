@@ -45,11 +45,3 @@ addEventListener('unload', subscription.unsubscribe)
 ## License
 
 The code is derived from `@parcel/watcher` and uses its binaries, which are licensed under the [MIT License](https://github.com/parcel-bundler/watcher/blob/master/LICENSE).
-
-## Sponsors
-
-<p align="center">
-  <a href="https://cdn.jsdelivr.net/gh/brc-dd/static/sponsors.svg">
-    <img alt="Sponsors" src="https://cdn.jsdelivr.net/gh/brc-dd/static/sponsors.svg"/>
-  </a>
-</p>
